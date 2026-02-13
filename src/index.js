@@ -12,7 +12,7 @@ const canvas = document.querySelector("canvas")
 
         const ctx = canvas.getContext("2d", {willReadFrequently: true})
         
-         class Cell {
+         class gridCell {
             constructor(x, y, symbol, color){
                 this.x = x
                 this.y = y
@@ -80,7 +80,7 @@ const canvas = document.querySelector("canvas")
                             const average = total / 3
                             const color = "rgb(" + red + "," + green +"," + blue + ")"
                             const symbol = this.#convertToSymbol(average)
-                            if(total > 50) this.#imageCellArray.push(new Cell(x, y, symbol, color))
+                            if(total > 50) this.#imageCellArray.push(new gridCell(x, y, symbol, color))
                        }
                     }
                 }
