@@ -11,9 +11,12 @@ and my currrent Image has a color format of srgb = standard red green and blue
 
 
 ########## This calculation is for image data ###########
+
+
+
 calculations : 
 
-360000 / 4 = 90, 000 pixels
+e.g: 360000 / 4 = 90, 000 pixels
 
 which is equivalent to 300 * 300
 
