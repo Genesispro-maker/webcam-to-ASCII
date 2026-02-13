@@ -20,7 +20,7 @@ Draw each video frame onto a <canvas>
 
 Sample pixel brightness/color and map it to ASCII characters
 
-Render the ASCII art in a <canvas> or element
+Render the ASCII art in a canvas
 
 🔹 Usage
 
