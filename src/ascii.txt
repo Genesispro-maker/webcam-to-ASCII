@@ -1,0 +1,26 @@
+########## Calculations: #############
+
+Note: This file will give you a little insight in some of the calculations used;
+
+
+
+Image Data is stored in a Uint8ClampedArray which means no decimals
+
+and my currrent Image has a color format of srgb = standard red green and blue 
+
+calculations : 
+
+360000 / 4 = 90, 000 pixels
+
+which is equivalent to 300 * 300
+
+Base64: 100 in base 10  = 100 / 64 = 1 remainder 36
+                          1 / 64 = 0 remainder 1 
+
+Total : 1 - B, 36 = k, 100 in base 10 is Bk in base 64
+
+Base64 encoding = A - Z = 0-25, 
+                  a - z = 26 - 51,
+                  0 - 9 = 52 - 61, 
+                  62 = +, 
+                  63 = /
