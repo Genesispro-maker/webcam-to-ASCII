@@ -20,7 +20,7 @@ const canvas = document.querySelector("canvas")
                 this.color = color
             }
 
-            draw(ctx){
+            drawContext(ctx){
                 ctx.fillStyle = this.color
                 ctx.fillText(this.symbol, this.x, this.y)
 
@@ -80,7 +80,8 @@ const canvas = document.querySelector("canvas")
                             const average = total / 3
                             const color = "rgb(" + red + "," + green +"," + blue + ")"
                             const symbol = this.#convertToSymbol(average)
-                            if(total > 50) this.#imageCellArray.push(new gridCell(x, y, symbol, color))
+                            const ascii = new gridCell(X, y, symbol, color)
+                            if(total > 50) this.#imageCellArray.push(ascii)
                        }
                     }
                 }
@@ -92,7 +93,7 @@ const canvas = document.querySelector("canvas")
             #drawAscii(){
                 this.#ctx.clearRect(0, 0, this.#width, this.#height)
                 for(let i = 0; i < this.#imageCellArray.length; i++){
-                    this.#imageCellArray[i].draw(this.#ctx)
+                    this.#imageCellArray[i].drawContext(this.#ctx)
                 }
             }
 
