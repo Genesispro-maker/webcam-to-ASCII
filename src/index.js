@@ -1,8 +1,9 @@
-const canvas = document.querySelector("canvas")
+        const canvas = document.querySelector("canvas")
         const slider = document.querySelector("input[type = range]")
         const videoElement = document.querySelector("video")
         const span = document.querySelector("span")
         const btn = document.querySelector("button")
+        const container = document.querySelector(".container")
 
         slider.addEventListener("input", (e) => {
             span.textContent = `${e.target.value}x`
