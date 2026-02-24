@@ -6,7 +6,7 @@ Note: This file will give you a little insight in some of the calculations used;
 
 Image Data is stored in a Uint8ClampedArray which means no decimals
 
-and my currrent Image has a color format of srgb = standard red green and blue 
+and my currrent Image has a color format of srgb = (standard red green and blue) 
 
 
 
