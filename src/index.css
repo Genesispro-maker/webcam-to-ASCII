@@ -4,7 +4,7 @@
      box-sizing: border-box;
    }
  body{
-     background-color: black;
+     background-color: white;
  }
  .container{
      position: absolute;
@@ -18,7 +18,7 @@
  }
 
  .canvas{
-     border: 3px solid white;
+     border: 3px solid black;
      border-radius: 5px;
  }
  .controls{
@@ -38,7 +38,7 @@
  }
 
  label{
-     color: white;
+     color: black;
      font-size: 1rem;
      font-family: cursive;
  }
@@ -52,5 +52,25 @@
  }
 
  span{
-     color: white;
+     color: black;
+ }
+
+ input[type="range"]{
+    -webkit-appearance: none;
+    width: 80px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+ }
+
+ input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(255,255,255,0.5);
  }
