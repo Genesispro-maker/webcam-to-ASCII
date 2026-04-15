@@ -41,7 +41,6 @@
                 this.#height = height
                 this.#ctx.drawImage(videoElement, 0, 0, this.#width, this.#height)
                 this.#pixels = this.#ctx.getImageData(0, 0, this.#width, this.#height)
-                console.log(this.#pixels.data)
             }
 
             #convertToSymbol(g){
