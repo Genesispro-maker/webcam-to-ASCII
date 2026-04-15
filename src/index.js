@@ -9,10 +9,10 @@
             span.textContent = `${e.target.value}x`
         })
 
+        const ctx = canvas.getContext("2d", {
+            willReadFrequently: true,
+        })
 
-
-        const ctx = canvas.getContext("2d", {willReadFrequently: true})
-        
          class gridCell {
             constructor(x, y, symbol, color){
                 this.x = x
@@ -27,7 +27,6 @@
 
             }
          }
-
 
          class AsciiEffect {
             #imageCellArray= []
@@ -46,7 +45,6 @@
                 console.log(this.#pixels.data)
             }
 
-            
             #convertToSymbol(g){
                 if(g > 250) return "@"
                 else if(g < 240) return "*"
@@ -87,8 +85,6 @@
                     }
                 }
 
-                console.log(this.#imageCellArray)
-
             }
 
             #drawAscii(){
@@ -107,6 +103,7 @@
        }
 
 }
+
            let effect;
            
            async function startCamera() {
