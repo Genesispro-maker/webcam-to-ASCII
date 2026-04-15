@@ -24,7 +24,6 @@
             drawContext(ctx){
                 ctx.fillStyle = this.color
                 ctx.fillText(this.symbol, this.x, this.y)
-
             }
          }
 
@@ -101,7 +100,6 @@
              this.#scanImage(cellSize)
              this.#drawAscii()
        }
-
 }
 
            let effect;
